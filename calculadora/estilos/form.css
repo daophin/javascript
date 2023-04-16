@@ -13,6 +13,9 @@ body, html {
     width: 100vw;
     height: 100vh;
     background:center center / cover no-repeat url("../imagens/bg-image.jpg") antiquewhite fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header h1 {
@@ -33,7 +36,7 @@ main {
 
 section#login {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     overflow: hidden;
 
@@ -111,12 +114,13 @@ section .btn:hover{
     background-color: rgba(239, 238, 240, 0.658);
 }
 
-div > footer {
+footer {
     position: absolute;
+    top: 91%;
+    width: 100vw;
+    background-color: rgba(163, 162, 162, 0.363);
+    color: white;
     text-align: center;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }   
 
 /* Estilos da página de resultados*/
