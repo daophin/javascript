@@ -13,9 +13,6 @@ body, html {
     width: 100vw;
     height: 100vh;
     background:center center / cover no-repeat url("../imagens/bg-image.jpg") antiquewhite fixed;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 header h1 {
@@ -116,9 +113,8 @@ section .btn:hover{
 
 footer {
     position: absolute;
-    top: 91%;
     width: 100vw;
-    background-color: rgba(163, 162, 162, 0.363);
+    background-color: rgba(163, 162, 162, 0.507);
     color: white;
     text-align: center;
 }   
