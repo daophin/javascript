@@ -148,6 +148,7 @@ div#res {
     position: absolute;
     width: 300px;
     top: 85%;
-    left: 60%;
+    left: 50%;
+    text-align: center;
     transform: translate(-50%, -50%);
 }

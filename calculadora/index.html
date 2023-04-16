@@ -19,10 +19,10 @@
                 <p id="subtitulo">Escolha um número para descobrir seu anterior e seu sucessor!</p>
             </div>
             <div>
-                <form action="calc.js" method="get" autocomplete="off">
+                <form action="#" method="get" autocomplete="off">
                     <i class="material-icons">calculate</i>
                     <label for="menssage">Number</label>
-                    <input class="num1" type="number" name="menssage" id="txtn1" placeholder="Digite um valor inteiro">
+                    <input class="num1" type="text" name="menssage" id="txtn1" placeholder="Digite um valor inteiro">
                     <input class="btn" type="button" value="Calcular" onclick="somar()">
                 </form>
             </div>
@@ -40,7 +40,7 @@
             var n1 = Number(tn1.value)
             var s = n1 + 1
             var sub = n1 - 1
-            res.innerHTML = `Sucessor ${s} e Antecessor ${sub}`
+            res.innerHTML = `Sucessor ${s}<br> Antecessor ${sub}`
         }
     </script>
 </body>
