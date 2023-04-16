@@ -112,8 +112,6 @@ section .btn:hover{
 }
 
 footer {
-    position: absolute;
-    width: 100vw;
     background-color: rgba(163, 162, 162, 0.507);
     color: white;
     text-align: center;
