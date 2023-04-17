@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Digite sua Nacionalidade</h1>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="Enter" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var pais = window.document.querySelector('input#txt')
+            var res = window.document.getElementById('res')
+            var pais1 = String(pais.value).toUpperCase()
+            var pais1 = pais1.replaceAll(' ', '')
+            if (pais1 == 'BRASIL') {
+                res.innerHTML = `<p>Você é brasileiro!</p>`
+            } else {
+                res.innerHTML = `<p>Você é estrangeiro!</p>`
+            }
+    }
+    </script>
+</body>
+</html>

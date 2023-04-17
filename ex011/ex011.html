@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação</title>
+</head>
+<body>
+    <h1>Digite a idade para saber se você vota!</h1>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="Enter" onclick="clicar()">
+    <div id="res">Resultado aqui ...</div>
+    <script>
+        function clicar() {
+            var idade = window.document.getElementById('txt')
+            var res = window.document.getElementById('res')
+            var idadeNumber = Number(idade.value)
+            if (idadeNumber < 16) {
+                res.innerHTML = `Você tem ${idadeNumber} anos. Não vota!`
+            }
+            else if (idadeNumber < 18 || idadeNumber >= 65) {
+                res.innerHTML = `Você tem ${idadeNumber} anos. Voto opcional!`
+            }
+            else {
+                res.innerHTML = `Você tem ${idadeNumber} anos. Vota!`
+            }
+        }
+    </script>
+</body>
+</html>
