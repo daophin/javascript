@@ -15,7 +15,7 @@ function atualiarTempo() {
         backGroundColor.style.background = 'rgb(145, 85, 70)'
         imagem.src = "imagens/sunset.jpg"
     }
-    if (horaNaTela > 17 && horaNaTela < 23) {
+    if (horaNaTela > 17 && horaNaTela <= 23) {
         resp.innerHTML = `Boa noite! São ${horaNaTela}:${minutoNaTela}`
         backGroundColor.style.background = 'rgba(0, 0, 0, 0.9)'
         imagem.src = "imagens/night.jpg"
