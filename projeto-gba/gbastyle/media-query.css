@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+
+/* Todas as demais mídias */
+
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 600px
+Celular : até 600px até 760px
+Tablet:768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 600px) and (max-width: 760px) {  /* Configuração para Tablet */
+
+    body {
+        background-color: gray;
+        align-items: center;
+        display: flex;
+        height: 92vh;
+        align-content: center;
+    }
+
+    main.gba {
+        background-color: #FBC11B;
+        height: 300px;
+        width: 660px;
+        margin: auto;
+        border-radius: 10px 10px 30px 40px;
+    }
+    
+    div.gbabody {
+        position: relative;
+        background-image: linear-gradient(to right, #FBC11B, #fdd361 );
+        height: 300px;
+        width: 50px;
+        left: 610px;
+        border-radius: 0px 10px 30px 0px;
+    }
+    
+    
+    
+    section.tela {
+        animation: fadeOut 1s;
+        position: relative;
+        background-image: linear-gradient(to right, #10151E, #242e41) ;
+        width: 300px;
+        height: 199px;
+        top: 30px;
+        right: 420px;
+        border-radius: 6px;
+    }
+    
+    .btnright {
+        position: relative;
+        right: 14px;
+        bottom: 250px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: #F43D34;
+        color: #df716c;
+        border-radius:50% 50%;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+        border-color: 1px 1px 1px #ffffff;
+    }
+    
+    .btnleft {
+        position: relative;
+        right: 60px;
+        bottom: 250px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: #48AE64;
+        color: #61ca7d;
+        border-radius:50% 50%;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+        border-color: 1px 1px 1px #ffffff;
+    }
+    
+    .btnmidler {
+        position: relative;
+        left: -250px;
+        bottom: 160px;
+        width: 30px;
+        height: 15px;
+        text-align: center;
+        background-color: #3A322E;
+        color: #61ca7d;
+        border-radius:50% 50%;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+        border-color: 1px 1px 1px #ffffff;
+    }
+    
+    .btnmidlel {
+        position: relative;
+        right: 320px;
+        bottom: 140px;
+        width: 30px;
+        height: 15px;
+        text-align: center;
+        background-color: #3A322E;
+        color: #61ca7d;
+        border-radius:50% 50%;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+        border-color: 1px 1px 1px #ffffff;
+    }
+
+    .btntop {
+        position: relative;
+        bottom: 350px;
+        right: 540px;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 33, 141, 0.884);
+    }
+    
+    #arrowtop {
+        position: relative;
+        right: 540px;
+        top: -110px;
+    }
+    
+    .btnr {
+        position: relative;
+        bottom: 430px;
+        right: 515px;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 33, 141, 0.884);
+    }
+    
+    #arrowright {
+        position: relative;
+        top:-141px;
+        right: 515px;
+    }
+    
+    .btnl {
+        position: relative;
+        bottom: 351px;
+        right: 565px;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 33, 141, 0.884);
+    }
+    
+    #arrowleft {
+        position: relative;
+        top:-112px;
+        right: 565px;
+    }
+    
+    
+    .btnbot {
+        position: relative;
+        bottom: 378px;
+        right: 540px;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 33, 141, 0.884);
+        text-align: center;
+    }
+    
+    #arrowbot {
+        position: relative;
+        top:-143px;
+        right: 540px;
+    }
+    
+    
+    .btnmidle {
+        position: relative;
+        bottom: 377px;
+        right: 540px;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(0, 33, 141, 0.884);
+        font-size: 0.9em;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    #circlemidle {
+        position: relative;
+        top: -196px;
+        right: 540px;
+    }
+    
+    
+    /*@keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 0;
+        }
+    }*/
+}
