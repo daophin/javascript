@@ -18,10 +18,10 @@ main.gba {
 
 div.gbabody {
     position: relative;
-    background-color: #F9CC57;
+    background-image: linear-gradient(to right, #FBC11B, #fdd361 );
     height: 500px;
-    width: 40px;
-    left: 290px;
+    width: 50px;
+    left: 300px;
     border-radius: 0px 10px 30px 0px;
 }
 
@@ -30,8 +30,8 @@ div.gbabody {
 section.tela {
     animation: fadeOut 1s;
     position: relative;
-    background-color: #10151E;
-    width: 290px;
+    background-image: linear-gradient(to right, #10151E, #242e41) ;
+    width: 300px;
     height: 199px;
     top: 30px;
     right: 270px;
