@@ -24,7 +24,7 @@ Grandes telas: acima de 1200px
 
     main.gba {
         background-color: #FBC11B;
-        height: 300px;
+        height: 260px;
         width: 660px;
         margin: auto;
         border-radius: 10px 10px 30px 40px;
@@ -33,7 +33,7 @@ Grandes telas: acima de 1200px
     div.gbabody {
         position: relative;
         background-image: linear-gradient(to right, #FBC11B, #fdd361 );
-        height: 300px;
+        height: 260px;
         width: 50px;
         left: 610px;
         border-radius: 0px 10px 30px 0px;
@@ -46,7 +46,7 @@ Grandes telas: acima de 1200px
         position: relative;
         background-image: linear-gradient(to right, #10151E, #242e41) ;
         width: 300px;
-        height: 199px;
+        height: 169px;
         top: 30px;
         right: 420px;
         border-radius: 6px;
