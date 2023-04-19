@@ -18,8 +18,8 @@ Grandes telas: acima de 1200px
         background-color: gray;
         align-items: center;
         display: flex;
-        height: 92vh;
         align-content: center;
+        overflow: hidden;
     }
 
     main.gba {
