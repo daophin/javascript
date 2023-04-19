@@ -23,10 +23,11 @@ Grandes telas: acima de 1200px
     }
 
     main.gba {
+        position: relative;
         background-color: #FBC11B;
         height: 260px;
         width: 660px;
-        margin: auto;
+        bottom: 70px;
         border-radius: 10px 10px 30px 40px;
     }
     
@@ -45,10 +46,10 @@ Grandes telas: acima de 1200px
         animation: fadeOut 1s;
         position: relative;
         background-image: linear-gradient(to right, #10151E, #242e41) ;
-        width: 300px;
+        width: 350px;
         height: 169px;
         top: 30px;
-        right: 420px;
+        right: 440px;
         border-radius: 6px;
     }
     
