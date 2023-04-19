@@ -27,7 +27,7 @@ Grandes telas: acima de 1200px
         background-color: #FBC11B;
         height: 260px;
         width: 660px;
-        bottom: 70px;
+        top: 100px;
         border-radius: 10px 10px 30px 40px;
     }
     
@@ -48,7 +48,7 @@ Grandes telas: acima de 1200px
         background-image: linear-gradient(to right, #10151E, #242e41) ;
         width: 350px;
         height: 169px;
-        top: 30px;
+        top: 40px;
         right: 440px;
         border-radius: 6px;
     }
