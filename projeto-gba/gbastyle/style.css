@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body {
+    align-items: center;
+    display: flex;
+    height: 96vh;
+    align-content: center;
+
+}
+
+main.gba {
+    background-color: #FBC11B;
+    height: 480px;
+    width: 330px;
+    margin: auto;
+    border-radius: 10px 10px 30px 40px;
+}
+
+div.gbabody {
+    position: relative;
+    background-color: #F9CC57;
+    height: 480px;
+    width: 40px;
+    left: 290px;
+    border-radius: 0px 10px 30px 0px;
+}
+
+
+
+section.tela {
+    animation: fadeOut 1s;
+    position: relative;
+    background-color: #10151E;
+    width: 290px;
+    height: 199px;
+    top: 30px;
+    right: 270px;
+    border-radius: 6px;
+}
+
+.btnright {
+    position: relative;
+    right: 14px;
+    top: 80px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #F43D34;
+    color: #df716c;
+    border-radius:50% 50%;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    border-color: 1px 1px 1px #ffffff;
+}
+
+.btnleft {
+    position: relative;
+    right: 60px;
+    top: 80px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #48AE64;
+    color: #61ca7d;
+    border-radius:50% 50%;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    border-color: 1px 1px 1px #ffffff;
+}
+
+.btnmidler {
+    position: relative;
+    right: 110px;
+    top: 120px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    background-color: #3A322E;
+    color: #61ca7d;
+    border-radius:50% 50%;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    border-color: 1px 1px 1px #ffffff;
+}
+
+.btnmidlel {
+    position: relative;
+    right: 170px;
+    top: 140px;
+    width: 30px;
+    height: 15px;
+    text-align: center;
+    background-color: #3A322E;
+    color: #61ca7d;
+    border-radius:50% 50%;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    border-color: 1px 1px 1px #ffffff;
+}
+
+.btnl {
+    position: relative;
+    top: 1px;
+    right: 260px;
+    width: 20px;
+    height: 20px;
+    background-color: #325BC5;
+}
+
+.btnr {
+    position: relative;
+    bottom: 62px;
+    right: 220px;
+    width: 20px;
+    height: 20px;
+    background-color: #325BC5;
+}
+
+.btnbot {
+    position: relative;
+    bottom: 21px;
+    right: 240px;
+    width: 20px;
+    height: 20px;
+    background-color: #325BC5;
+}
+
+.btntop {
+    position: relative;
+    top: 3px;
+    right: 240px;
+    width: 20px;
+    height: 20px;
+    background-color: #325BC5;
+}
+
+.btnmidle {
+    position: relative;
+    bottom: 20px;
+    right: 240px;
+    width: 20px;
+    height: 20px;
+    background-color: #325BC5;
+}
+
+
+/*@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}*/
