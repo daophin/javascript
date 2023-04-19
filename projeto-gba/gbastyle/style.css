@@ -28,14 +28,14 @@ div.gbabody {
 
 
 section.tela {
-    animation: fadeOut 1s;
+    animation: bounceIn 2s;
     position: relative;
     background-image: linear-gradient(to right, #10151E, #242e41) ;
     width: 300px;
     height: 199px;
     top: 30px;
-    right: 270px;
-    border-radius: 6px;
+    right: 274px;
+    border-radius: 20px;
 }
 
 .btnright {
@@ -175,12 +175,20 @@ section.tela {
 }
 
 
-/*@keyframes fadeOut {
+@keyframes bounceIn {
     0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.05);
         opacity: 1;
+        border-radius: 5px;
     }
 
     100% {
-        opacity: 0;
+        transform: scale(1);
+        border-radius: 10px;
     }
-}*/
+}

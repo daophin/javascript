@@ -34,18 +34,18 @@ Grandes telas: acima de 1200px
         left: 610px;
         border-radius: 0px 10px 30px 0px;
     }
-    
+}
     
     
     section.tela {
-        animation: fadeOut 1s;
+        animation: bounceIn 2s;
         position: relative;
         background-image: linear-gradient(to right, #10151E, #242e41) ;
         width: 350px;
         height: 169px;
         top: 40px;
         right: 440px;
-        border-radius: 6px;
+        border-radius: 15px;
     }
     
     .btnright {
@@ -186,13 +186,20 @@ Grandes telas: acima de 1200px
     }
     
     
-    /*@keyframes fadeOut {
+    @keyframes bounceIn {
         0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    
+        80% {
+            transform: scale(1.05);
             opacity: 1;
+            border-radius: 5px;
         }
     
         100% {
-            opacity: 0;
+            transform: scale(1);
+            border-radius: 10px;
         }
-    }*/
-}
+    }
