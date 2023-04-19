@@ -12,7 +12,7 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 600px) and (max-width: 760px) {  /* Configuração para Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {  /* Configuração para Tablet */
 
     body {
         background-color: gray;
