@@ -8,6 +8,24 @@ body {
 
 }
 
+.baterry {
+    animation: btnColorTransition 2s;
+    position: relative;
+    width: 20px;
+    height: 10px;
+    top: 5px;
+    text-align: center;
+    background-color: #1a3f24;
+    color: #df716c;
+    border-radius:50% 50%;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+    border-color: 1px 1px 1px #ffffff;
+}
+
+.baterry:focus {
+    background-color: #48AE64;
+}
+
 main.gba {
     background-color: #FBC11B;
     height: 500px;
@@ -190,5 +208,25 @@ section.tela {
     100% {
         transform: scale(1);
         border-radius: 10px;
+    }
+
+    
+}
+
+@keyframes btnColorTransition {
+    0% {
+        background-color: #48AE64;
+    }
+
+    25% {
+        background-color: #3e9756;
+    }
+
+    75% {
+        background-color: #2e703f;
+    }
+
+    100% {
+        background-color: #1a3d22;
     }
 }

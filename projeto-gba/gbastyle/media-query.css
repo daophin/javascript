@@ -14,7 +14,7 @@ Grandes telas: acima de 1200px
 
 
 
-@media screen and (min-width: 768px) and (max-width: 1380px) {  /* Configuração para Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {  /* Configuração para Tablet */
 
     body {
         background-color: gray;
@@ -81,7 +81,6 @@ Grandes telas: acima de 1200px
     .btnmidler {
         position: relative;
         left: -250px;
-        top: 5px;
         width: 30px;
         height: 15px;
         text-align: center;
@@ -95,7 +94,6 @@ Grandes telas: acima de 1200px
     .btnmidlel {
         position: relative;
         right: 320px;
-        top: 23px;
         width: 30px;
         height: 15px;
         text-align: center;
