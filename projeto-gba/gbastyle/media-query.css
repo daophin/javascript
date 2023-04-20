@@ -25,6 +25,26 @@ Grandes telas: acima de 1200px
         align-content: center;
     }
 
+
+    .p {transform: translate(-13%, 190%) rotate(-10deg)}
+    .o {transform: translate(-10%, 50%) rotate(-9deg)}
+    .k {transform: translate(-6%, -95%) rotate(-6deg)}
+    .e {transform: translate(-1%, -230%) rotate(0deg)}
+    .m {transform: translate(4%, -365%) rotate(6deg);}
+    .o1 {transform: translate(9%, -500%) rotate(9deg);}
+    .n {transform: translate(13%, -685%) rotate(10deg);
+        font-size: 1.4em;}
+
+    h1.txt {
+        font-family: 'Pokemon';
+        position: relative;
+        top: 65%;
+        text-align: center;
+        color: #245FBF;
+    }
+
+    
+
     main.gba {
         background-color: #FBC11B;
         height: 255px;
@@ -80,7 +100,7 @@ Grandes telas: acima de 1200px
     
     .btnmidler {
         position: relative;
-        left: -250px;
+        right: 720%;
         width: 30px;
         height: 15px;
         text-align: center;
@@ -93,7 +113,7 @@ Grandes telas: acima de 1200px
     
     .btnmidlel {
         position: relative;
-        right: 320px;
+        right: 420%;
         width: 30px;
         height: 15px;
         text-align: center;

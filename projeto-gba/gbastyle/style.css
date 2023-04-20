@@ -1,11 +1,38 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../fonts/fonte-pokemon.otf') format('opentype');
+}
+
 body {
     align-items: center;
     display: flex;
-    height: 100vh;
+    height: 100%;
+    padding: 2%;
     align-content: center;
 
+}
+.positionsec {
+    text-align: center;
+    position: relative;
+}
+h1 {
+    position: relative;
+    font-family: 'Pokemon';
+    text-align: center;
+    font-size: 1.5em;
+    color: #245FBF;
+}
+
+.p {transform: translate(-19%, 460%) rotate(-10deg)}
+.o {transform: translate(-16%, 320%) rotate(-9deg)}
+.k {transform: translate(-11%, 174%) rotate(-6deg)}
+.e {transform: translate(-5%, 34%) rotate(0deg)}
+.m {transform: translate(1%, -100%) rotate(6deg);}
+.o1 {transform: translate(7%, -235%) rotate(9deg);}
+.n {transform: translate(11%, -395%) rotate(10deg);
+    font-size: 1.4em;
 }
 
 .baterry {
@@ -216,6 +243,7 @@ section.tela {
 @keyframes btnColorTransition {
     0% {
         background-color: #48AE64;
+
     }
 
     25% {
