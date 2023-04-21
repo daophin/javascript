@@ -84,7 +84,7 @@ section.tela {
 }
 
 #pokeball {
-    animation: pokeBallShow 4s;
+    animation: pokeBallShow 5s;
     position: absolute;
     background-color: #cf352d;
     width: 30px;
@@ -95,7 +95,7 @@ section.tela {
 }
 
 #pokeballWhitePoint {
-    animation: pokeBallShow 4s;
+    animation: pokeBallShow 5s;
     position: absolute;
     background-color: #dad6d6;
     width: 8px;
@@ -108,7 +108,7 @@ section.tela {
 }
 
 #pokeballLine {
-    animation: pokeBallShow 4s;
+    animation: pokeBallShow 5s;
     position: absolute;
     background-color: black;
     width: 30px;
@@ -342,27 +342,27 @@ section.tela {
     }
 
     30% {
-        transform: scale(0.6);
+        transform: scale(0.6, 1);
         opacity: 1;
     }
 
     35% {
-        transform: scale(0.7);
+        transform: scale(0.7, 1.5);
         opacity: 1;
     }
 
     40% {
-        transform: scale(0.8);
+        transform: scale(0.8, 1);
         opacity: 1;
     }
 
     45% {
-        transform: scale(0.9);
+        transform: scale(1);
         opacity: 1;
     }
 
     50% {
-        transform: scale(1);
+        transform: scale(1.2);
         opacity: 1;
     }
     
@@ -416,29 +416,24 @@ section.tela {
 
     }
 
-    96% {
-        transform: scale(1.1);
-        border-radius: 10px;
-
-    }
 
     96% {
-        transform: scale(1) rotate(-30deg);
+        transform: scale(1) rotate(-30deg) skew(-30deg);
         border-radius: 10px;
     }
 
     97% {
-        transform: scale(1) rotate(30deg);
+        transform: scale(1) rotate(30deg) skew(30deg);
         border-radius: 10px;
     }
 
     99% {
-        transform: scale(1) rotate(-15deg);
+        transform: scale(1) rotate(-15deg) skew(-15deg);
         border-radius: 10px;
     }
 
     100% {
-        transform: scale(1) rotate(15deg);
+        transform: scale(1) rotate(15deg) skew(15deg);
         border-radius: 10px;
     }
 
