@@ -36,6 +36,7 @@ h1 {
 
 .baterry {
     position: absolute;
+    animation: btnColorTransition 2s;
     width: 20px;
     height: 10px;
     bottom: 97%;
