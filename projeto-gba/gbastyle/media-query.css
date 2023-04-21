@@ -25,39 +25,54 @@ Grandes telas: acima de 1200px
         align-content: center;
     }
 
-
-    .p {transform: translate(-80%, -130%) rotate(-10deg)}
-    .o {transform: translate(-60%, -260%) rotate(-9deg)}
-    .k {transform: translate(-30%, -400%) rotate(-6deg)}
-    .e {transform: translate(5%, -530%) rotate(0deg)}
-    .m {transform: translate(40%, -660%) rotate(6deg);}
-    .o1 {transform: translate(70%, -790%) rotate(9deg);}
-    .n {transform: translate(100%, -920%) rotate(10deg);}
+    h1 {
+        font-family: 'Pokemon';
+        text-align: center;
+        font-size: 1.5em;
+        color: #245FBF;
+    }
 
     #pokemontxt {
         background-color: #245FBF;
         position: relative;
         height: 0px;
-        top: -150px;
-        left: -300px;
+
     }
 
-    h1.txt {
-        font-family: 'Pokemon';
-        position: relative;
-        top: 65%;
+    .p {transform: translate(2050%, -153%) rotate(-10deg); position: absolute;}
+    .o {transform: translate(2360%, -155%) rotate(-9deg); position: absolute;}
+    .k {transform: translate(2250%, -160%) rotate(-6deg); position: absolute;}
+    .e {transform: translate(2640%, -158%) rotate(0deg); position: absolute;}
+    .m {transform: translate(1990%, -158%) rotate(6deg); position: absolute;}
+    .o1 {transform: translate(2956%, -155%) rotate(9deg); position: absolute;}
+    .n {transform: translate(3460%, -159%) rotate(10deg); position: absolute; font-size: 1.2em;}
+
+    .baterry {
+        animation: btnColorTransition 2s;
+        position: absolute;
+        width: 20px;
+        height: 10px;
+        top: 5px;
         text-align: center;
-        color: #245FBF;
+        background-color: #1a3f24;
+        color: #df716c;
+        border-radius:50% 50%;
+        box-shadow: 2px 1px 5px rgb(0, 0, 0);
+        border-color: 1px 1px 1px #ffffff;
     }
-
-    
 
     main.gba {
         position: relative;
         background-color: #fbbf1b;
         height: 255px;
         width: 660px;
+        left: 50%;
         border-radius: 10px 10px 30px 40px;
+        transform: translate(-50%);
+    }
+
+    .baterry:focus {
+        background-color: #48AE64;
     }
     
     div.gbabody {
@@ -65,26 +80,27 @@ Grandes telas: acima de 1200px
         background-image: linear-gradient(to right, #FBC11B, #fdd361 );
         height: 255px;
         width: 50px;
-        left: 610px;
+        left: 92.4%;
         border-radius: 0px 10px 30px 0px;
     }
 
-    
-    
     section.tela {
+        animation: bounceIn 1s;
         position: absolute;
-        background-image: linear-gradient(to right, #10151E, #242e41) ;
-        width: 360px;
-        height: 180px;
-        right: 140px;
+        background-image: linear-gradient(to right, #10151e, #242e41) ;
+        width: 288px;
+        height: 192px;
+        top: 10%;
+        left: 28%;
         border-radius: 15px;
     }
     
     .btnright {
-        position: relative;
-        right: 14px;
+        position: absolute;
         width: 30px;
         height: 30px;
+        bottom: 50%;
+        left: 90%;
         text-align: center;
         background-color: #F43D34;
         color: #df716c;
@@ -94,10 +110,11 @@ Grandes telas: acima de 1200px
     }
     
     .btnleft {
-        position: relative;
-        right: 60px;
+        position: absolute;
         width: 30px;
         height: 30px;
+        bottom: 40%;
+        left: 80%;
         text-align: center;
         background-color: #48AE64;
         color: #61ca7d;
@@ -107,10 +124,11 @@ Grandes telas: acima de 1200px
     }
     
     .btnmidler {
-        position: relative;
-        right: 730%;
+        position: absolute;
         width: 30px;
         height: 15px;
+        bottom: 5%;
+        left: 59%;
         text-align: center;
         background-color: #3A322E;
         color: #61ca7d;
@@ -120,10 +138,11 @@ Grandes telas: acima de 1200px
     }
     
     .btnmidlel {
-        position: relative;
-        right: 410%;
+        position: absolute;
         width: 30px;
         height: 15px;
+        bottom: 5%;
+        left: 35%;
         text-align: center;
         background-color: #3A322E;
         color: #61ca7d;
@@ -133,65 +152,70 @@ Grandes telas: acima de 1200px
     }
 
     .btntop {
-        position: relative;
-        right: 540px;
+        position: absolute;
         width: 25px;
         height: 25px;
+        top: 40%;
         background-color: rgba(0, 33, 141, 0.884);
     }
     
     #arrowtop {
-        position: relative;
-        right: 540px;
+        position: absolute;
+        top: 40%;
+
     }
     
     .btnr {
-        position: relative;
-        right: 515px;
+        position: absolute;
         width: 25px;
         height: 25px;
+        top: 50%;
+        left: 18.8%;
         background-color: rgba(0, 33, 141, 0.884);
     }
     
     #arrowright {
-        position: relative;
-        right: 515px;
+        position: absolute;
+        top: 50%;
+        left: 18.8%;
     }
     
     .btnl {
-        position: relative;
-        right: 565px;
+        position: absolute;
         width: 25px;
         height: 25px;
+        top: 50%;
+        left: 11.2%;
         background-color: rgba(0, 33, 141, 0.884);
     }
     
     #arrowleft {
-        position: relative;
-        right: 565px;
+        position: absolute;
+        top: 50%;
+        left: 11.2%;
     }
     
     
     .btnbot {
-        position: relative;
-        right: 540px;
+        position: absolute;
         width: 25px;
         height: 25px;
+        top: 59.7%;
         background-color: rgba(0, 33, 141, 0.884);
         text-align: center;
     }
     
     #arrowbot {
-        position: relative;
-        right: 540px;
+        position: absolute;
+        top: 59.7%;
     }
     
     
     .btnmidle {
-        position: relative;
-        right: 540px;
+        position: absolute;
         width: 25px;
         height: 25px;
+        top: 50%;
         background-color: rgba(0, 33, 141, 0.884);
         font-size: 0.9em;
         font-weight: bold;
@@ -199,8 +223,178 @@ Grandes telas: acima de 1200px
     }
     
     #circlemidle {
-        position: relative;
-        right: 540px;
+        position: absolute;
+        top: 50%;
+    }
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+    
+        80% {
+            transform: scale(1.05);
+            opacity: 1;
+            border-radius: 5px;
+        }
+    
+        100% {
+            transform: scale(1);
+            border-radius: 10px;
+        }
+    
+        
     }
     
+    @keyframes btnColorTransition {
+        0% {
+            background-color: #48AE64;
+    
+        }
+    
+        25% {
+            background-color: #3e9756;
+        }
+    
+        75% {
+            background-color: #2e703f;
+        }
+    
+        100% {
+            background-color: #1a3d22;
+        }
+    }
+    
+    @keyframes pokeBallShow {
+        0% {
+            transform: scale(0.0);
+            opacity: 0;
+        }
+        5% {
+            transform: scale(0.1);
+            opacity: 1;
+        }
+    
+        10% {
+            transform: scale(0.2);
+            opacity: 1;
+        }
+    
+        15% {
+            transform: scale(0.3);
+            opacity: 1;
+        }
+    
+        20% {
+            transform: scale(0.4);
+            opacity: 1;
+        }
+    
+        25% {
+            transform: scale(0.5);
+            opacity: 1;
+        }
+    
+        30% {
+            transform: scale(0.6);
+            opacity: 1;
+        }
+    
+        35% {
+            transform: scale(0.7);
+            opacity: 1;
+        }
+    
+        40% {
+            transform: scale(0.8);
+            opacity: 1;
+        }
+    
+        45% {
+            transform: scale(0.9);
+            opacity: 1;
+        }
+    
+        50% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        55% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+        
+        60% {
+            transform: scale(1.4);
+            opacity: 1;
+        }
+        
+        65% {
+            transform: scale(1.3);
+            opacity: 1;
+        }
+        
+        70% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    
+        75% {
+            transform: scale(1.3);
+        }
+    
+        80% {
+            transform: scale(1.5);
+            opacity: 1;
+            border-radius: 5px;
+        }
+    
+        85% {
+            transform: scale(1.4);
+            opacity: 1;
+            border-radius: 5px;
+    
+        }
+        90% {
+            transform: scale(1.3);
+            opacity: 1;
+            border-radius: 5px;
+    
+        }
+    
+        95% {
+            transform: scale(1.2);
+            opacity: 1;
+            border-radius: 5px;
+    
+        }
+    
+        96% {
+            transform: scale(1.1);
+            border-radius: 10px;
+    
+        }
+    
+        96% {
+            transform: scale(1) rotate(-30deg);
+            border-radius: 10px;
+        }
+    
+        97% {
+            transform: scale(1) rotate(30deg);
+            border-radius: 10px;
+        }
+    
+        99% {
+            transform: scale(1) rotate(-15deg);
+            border-radius: 10px;
+        }
+    
+        100% {
+            transform: scale(1) rotate(15deg);
+            border-radius: 10px;
+        }
+    
+    }
 }

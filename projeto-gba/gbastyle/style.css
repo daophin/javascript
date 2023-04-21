@@ -13,37 +13,33 @@ body {
     align-content: center;
 
 }
+
 h1 {
-    position: relative;
     font-family: 'Pokemon';
-    text-align: center;
     font-size: 1.5em;
     color: #245FBF;
 }
 
-.p {transform: translate(-125%, -210%) rotate(-10deg)}
-.o {transform: translate(-105%, -340%) rotate(-9deg)}
-.k {transform: translate(-80%, -480%) rotate(-6deg)}
-.e {transform: translate(-45%, -610%) rotate(0deg)}
-.m {transform: translate(-10%, -740%) rotate(6deg);}
-.o1 {transform: translate(20%, -870%) rotate(9deg);}
-.n {transform: translate(50%, -1000%) rotate(10deg);}
-
 #pokemontxt {
-    background-color: #245FBF;
+    animation: bounceIn 2s;
+
     position: relative;
-    height: 0px;
-    top: -150px;
-    right: 130px;
-    animation: textoPokemon 1s;
 }
 
+.p {transform: translate(620%, -330%) rotate(-10deg); position: absolute;}
+.o {transform: translate(770%, -330%) rotate(-9deg); position: absolute;}
+.k {transform: translate(810%, -338%) rotate(-6deg); position: absolute;}
+.e {transform: translate(1050%, -338%) rotate(0deg); position: absolute;}
+.m {transform: translate(850%, -338%) rotate(6deg); position: absolute;}
+.o1 {transform: translate(1356%, -338%) rotate(9deg); position: absolute;}
+.n {transform: translate(1660%, -383%) rotate(10deg); position: absolute; font-size: 1.2em;}
+
 .baterry {
-    animation: btnColorTransition 2s;
-    position: relative;
+    position: absolute;
     width: 20px;
     height: 10px;
-    top: 5px;
+    bottom: 97%;
+    left: 90%;
     text-align: center;
     background-color: #1a3f24;
     color: #df716c;
@@ -57,36 +53,37 @@ h1 {
 }
 
 main.gba {
+    position: relative;
     background-color: #FBC11B;
-    height: 500px;
-    width: 330px;
-    margin: auto;
+    height: 537px;
+    width: 288px;
+    left: 50%;
     border-radius: 10px 10px 30px 40px;
+    transform: translate(-50%);
 }
 
 div.gbabody {
     position: relative;
     background-image: linear-gradient(to right, #FBC11B, #fdd361 );
-    height: 500px;
+    height: 537px;
     width: 50px;
-    left: 300px;
+    left: 238px;
     border-radius: 0px 10px 30px 0px;
 }
 
-
-
 section.tela {
-    position: relative;
+    animation: bounceIn 2s;
+    position: absolute;
     background-image: linear-gradient(to right, #10151E, #242e41) ;
-    width: 300px;
-    height: 199px;
-    top: 30px;
-    right: 270px;
     border-radius: 20px;
-    animation: bounceIn 1s;
+    width: 249px;
+    height: 249px;
+    left: 7%;
+    bottom: 50%;
 }
 
 #pokeball {
+    animation: pokeBallShow 4s;
     position: absolute;
     background-color: #cf352d;
     width: 30px;
@@ -94,37 +91,36 @@ section.tela {
     border-radius: 50%;
     top: 40%;
     left: 44%;
-    animation: pokeBallShow 5s;
 }
 
 #pokeballWhitePoint {
+    animation: pokeBallShow 4s;
     position: absolute;
     background-color: #dad6d6;
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    top: 45%;
-    left: 47%;
+    top: 44%;
+    left: 47.5%;
     border: 2px solid black;
-    animation: pokeBallShow 5s;
 
 }
 
 #pokeballLine {
+    animation: pokeBallShow 4s;
     position: absolute;
     background-color: black;
     width: 30px;
     height: 2px;
-    top: 47%;
+    top: 46%;
     left: 44%;
-    animation: pokeBallShow 5s;
 
 }
 
 .btnright {
-    position: relative;
-    right: 14px;
-    bottom: 30px;
+    position: absolute;
+    bottom: 35%;
+    left: 80%;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -136,9 +132,9 @@ section.tela {
 }
 
 .btnleft {
-    position: relative;
-    right: 60px;
-    bottom: 30px;
+    position: absolute;
+    bottom: 32%;
+    left: 62%;
     width: 30px;
     height: 30px;
     text-align: center;
@@ -150,11 +146,11 @@ section.tela {
 }
 
 .btnmidler {
-    position: relative;
-    right: 110px;
-    bottom: 20px;
+    position: absolute;
     width: 30px;
     height: 15px;
+    bottom: 18%;
+    left: 52%;
     text-align: center;
     background-color: #3A322E;
     color: #61ca7d;
@@ -164,11 +160,12 @@ section.tela {
 }
 
 .btnmidlel {
-    position: relative;
-    right: 170px;
+    position: absolute;
     bottom: 0px;
     width: 30px;
     height: 15px;
+    bottom: 18%;
+    left: 33%;
     text-align: center;
     background-color: #3A322E;
     color: #61ca7d;
@@ -177,74 +174,75 @@ section.tela {
     border-color: 1px 1px 1px #ffffff;
 }
 .btntop {
-    position: relative;
-    bottom: 130px;
-    right: 240px;
+    position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 36.7%;
+    left: 15%;
     background-color: rgba(0, 33, 141, 0.884);
 }
 
 #arrowtop {
-    position: relative;
-    right: 240px;
-    top: 105px;
+    position: absolute;
+    bottom: 36.7%;
+    left: 15%;    
 }
 
 .btnr {
-    position: relative;
-    bottom: 210px;
-    right: 215px;
+    position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 32%;
+    left: 23.8%;
     background-color: rgba(0, 33, 141, 0.884);
 }
 
 #arrowright {
-    position: relative;
-    top:75px;
-    right: 215px;
+    position: absolute;
+    bottom: 32%;
+    left: 24.8%;
 }
 
 .btnl {
-    position: relative;
-    bottom: 131px;
-    right: 265px;
+    position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 32%;
+    left: 6.3%;
     background-color: rgba(0, 33, 141, 0.884);
 }
 
 #arrowleft {
-    position: relative;
-    top:103px;
-    right: 265px;
+    position: absolute;
+    bottom: 32%;
+    left: 6.3%;
 }
 
 
 .btnbot {
-    position: relative;
-    bottom: 158px;
-    right: 240px;
+    position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 27.3%;
+    left: 15%;
     background-color: rgba(0, 33, 141, 0.884);
     text-align: center;
 }
 
 #arrowbot {
-    position: relative;
-    top:73px;
-    right: 240px;
+    position: absolute;
+    bottom: 27.3%;
+    left: 15%;
 }
 
 
+
 .btnmidle {
-    position: relative;
-    bottom: 157px;
-    right: 240px;
+    position: absolute;
     width: 25px;
     height: 25px;
+    bottom: 32%;
+    left: 15%;
     background-color: rgba(0, 33, 141, 0.884);
     font-size: 0.9em;
     font-weight: bold;
@@ -252,9 +250,9 @@ section.tela {
 }
 
 #circlemidle {
-    position: relative;
-    top:20px;
-    right: 240px;
+    position: absolute;
+    bottom: 32%;
+    left: 15%;
 }
 
 @keyframes textoPokemon {
