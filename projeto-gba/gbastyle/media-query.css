@@ -67,7 +67,7 @@ Grandes telas: acima de 1200px
         height: 255px;
         width: 660px;
         left: 50%;
-        bottom: 8%;
+        bottom: 10%;
         border-radius: 10px 10px 30px 40px;
         transform: translate(-50%);
     }
