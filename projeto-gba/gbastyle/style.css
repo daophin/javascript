@@ -25,14 +25,24 @@ h1 {
     color: #245FBF;
 }
 
-.p {transform: translate(-19%, 460%) rotate(-10deg)}
-.o {transform: translate(-16%, 320%) rotate(-9deg)}
-.k {transform: translate(-11%, 174%) rotate(-6deg)}
-.e {transform: translate(-5%, 34%) rotate(0deg)}
-.m {transform: translate(1%, -100%) rotate(6deg);}
-.o1 {transform: translate(7%, -235%) rotate(9deg);}
-.n {transform: translate(11%, -395%) rotate(10deg);
+.p {transform: translate(-125%, -210%) rotate(-10deg)}
+.o {transform: translate(-105%, -340%) rotate(-9deg)}
+.k {transform: translate(-80%, -480%) rotate(-6deg)}
+.e {transform: translate(-45%, -610%) rotate(0deg)}
+.m {transform: translate(-10%, -740%) rotate(6deg);}
+.o1 {transform: translate(20%, -870%) rotate(9deg);}
+.n {transform: translate(50%, -1080%) rotate(10deg);
     font-size: 1.4em;
+}
+
+#pokemontxt {
+    background-color: #245FBF;
+    position: relative;
+    height: 0px;
+    top: -150px;
+    right: 130px;
+    animation: escalaPokemon 2s;
+
 }
 
 .baterry {
@@ -219,6 +229,21 @@ section.tela {
     right: 240px;
 }
 
+@keyframes escalaPokemon {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 @keyframes bounceIn {
     0% {
