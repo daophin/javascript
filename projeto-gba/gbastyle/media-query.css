@@ -94,6 +94,41 @@ Grandes telas: acima de 1200px
         left: 28%;
         border-radius: 15px;
     }
+
+    #pokeball {
+        animation: pokeBallShow 4s;
+        position: absolute;
+        background-color: #cf352d;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 40%;
+        left: 44%;
+    }
+    
+    #pokeballWhitePoint {
+        animation: pokeBallShow 4s;
+        position: absolute;
+        background-color: #dad6d6;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 44%;
+        left: 47.2%;
+        border: 2px solid black;
+    
+    }
+    
+    #pokeballLine {
+        animation: pokeBallShow 4s;
+        position: absolute;
+        background-color: black;
+        width: 30px;
+        height: 2px;
+        top: 46.2%;
+        left: 44%;
+    
+    }
     
     .btnright {
         position: absolute;
