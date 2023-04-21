@@ -84,7 +84,7 @@ section.tela {
 }
 
 #pokeball {
-    animation: pokeBallShow 5s;
+    animation: pokeBallShow 5s 3s;
     position: absolute;
     background-color: #cf352d;
     width: 30px;
@@ -92,10 +92,23 @@ section.tela {
     border-radius: 50%;
     top: 40%;
     left: 44%;
+    opacity: 0;
+}
+
+.pokeball {
+    position: absolute;
+    background-color: #cf352d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 40%;
+    left: 44%;
+    opacity: 0;
+    animation: fadeInPokeball 0s 8s both;
 }
 
 #pokeballWhitePoint {
-    animation: pokeBallShow 5s;
+    animation: pokeBallShow 5s 3s;
     position: absolute;
     background-color: #dad6d6;
     width: 8px;
@@ -104,20 +117,44 @@ section.tela {
     top: 44%;
     left: 47.5%;
     border: 2px solid black;
-
+    opacity: 0;
 }
 
+.pokeballWhitePoint {
+    position: absolute;
+    background-color: #dad6d6;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 44%;
+    left: 47.5%;
+    border: 2px solid black;
+    opacity: 0;
+    animation: fadeInPokeball 0s 8s both;
+}
+
+
 #pokeballLine {
-    animation: pokeBallShow 5s;
+    animation: pokeBallShow 5s 3s;
     position: absolute;
     background-color: black;
     width: 30px;
     height: 2px;
     top: 46%;
     left: 44%;
-
+    opacity: 0;
 }
 
+.pokeballLine {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    top: 46%;
+    left: 44%;
+    opacity: 0;
+    animation: fadeInPokeball 0s 8s both;
+}
 .btnright {
     position: absolute;
     bottom: 35%;
@@ -312,7 +349,8 @@ section.tela {
 }
 
 @keyframes pokeBallShow {
-    0% {
+
+    1% {
         transform: scale(0.0);
         opacity: 0;
     }
@@ -437,4 +475,13 @@ section.tela {
         border-radius: 10px;
     }
 
+}
+
+@keyframes fadeInPokeball {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

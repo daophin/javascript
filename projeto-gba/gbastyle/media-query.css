@@ -97,7 +97,7 @@ Grandes telas: acima de 1200px
     }
 
     #pokeball {
-        animation: pokeBallShow 4s;
+        animation: pokeBallShow 5s 3s;
         position: absolute;
         background-color: #cf352d;
         width: 30px;
@@ -106,9 +106,21 @@ Grandes telas: acima de 1200px
         top: 40%;
         left: 44%;
     }
+
+    .pokeball {
+        position: absolute;
+        background-color: #cf352d;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        top: 40%;
+        left: 44%;
+        opacity: 0;
+        animation: fadeInPokeball 0s 8s both;
+    }
     
     #pokeballWhitePoint {
-        animation: pokeBallShow 4s;
+        animation: pokeBallShow 5s 3s;
         position: absolute;
         background-color: #dad6d6;
         width: 8px;
@@ -119,9 +131,22 @@ Grandes telas: acima de 1200px
         border: 2px solid black;
     
     }
+
+    .pokeballWhitePoint {
+        position: absolute;
+        background-color: #dad6d6;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        top: 44%;
+        left: 47.2%;
+        border: 2px solid black;
+        opacity: 0;
+        animation: fadeInPokeball 0s 8s both;
+    }
     
     #pokeballLine {
-        animation: pokeBallShow 4s;
+        animation: pokeBallShow 5s 3s;
         position: absolute;
         background-color: black;
         width: 30px;
@@ -131,6 +156,16 @@ Grandes telas: acima de 1200px
     
     }
     
+    .pokeballLine {
+        position: absolute;
+        background-color: black;
+        width: 30px;
+        height: 2px;
+        top: 46.2%;
+        left: 44%;
+        opacity: 0;
+        animation: fadeInPokeball 0s 8s both;
+    }
     .btnright {
         position: absolute;
         width: 30px;
