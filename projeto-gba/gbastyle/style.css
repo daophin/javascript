@@ -35,8 +35,7 @@ h1 {
     height: 0px;
     top: -150px;
     right: 130px;
-    animation: escalaPokemon 2s;
-
+    animation: textoPokemon 1s;
 }
 
 .baterry {
@@ -84,7 +83,42 @@ section.tela {
     top: 30px;
     right: 270px;
     border-radius: 20px;
-    animation: bounceIn 2s;
+    animation: bounceIn 1s;
+}
+
+#pokeball {
+    position: absolute;
+    background-color: #cf352d;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 40%;
+    left: 44%;
+    animation: pokeBallShow 5s;
+}
+
+#pokeballWhitePoint {
+    position: absolute;
+    background-color: #dad6d6;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 45%;
+    left: 47%;
+    border: 2px solid black;
+    animation: pokeBallShow 5s;
+
+}
+
+#pokeballLine {
+    position: absolute;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    top: 47%;
+    left: 44%;
+    animation: pokeBallShow 5s;
+
 }
 
 .btnright {
@@ -223,7 +257,7 @@ section.tela {
     right: 240px;
 }
 
-@keyframes escalaPokemon {
+@keyframes textoPokemon {
     0% {
         transform: scale(0.1);
         opacity: 0;
@@ -276,4 +310,137 @@ section.tela {
     100% {
         background-color: #1a3d22;
     }
+}
+
+@keyframes pokeBallShow {
+    0% {
+        transform: scale(0.0);
+        opacity: 0;
+    }
+    5% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+
+    10% {
+        transform: scale(0.2);
+        opacity: 1;
+    }
+
+    15% {
+        transform: scale(0.3);
+        opacity: 1;
+    }
+
+    20% {
+        transform: scale(0.4);
+        opacity: 1;
+    }
+
+    25% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+
+    35% {
+        transform: scale(0.7);
+        opacity: 1;
+    }
+
+    40% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+
+    45% {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    55% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
+    60% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+    
+    65% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    
+    70% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    75% {
+        transform: scale(1.3);
+    }
+
+    80% {
+        transform: scale(1.5);
+        opacity: 1;
+        border-radius: 5px;
+    }
+
+    85% {
+        transform: scale(1.4);
+        opacity: 1;
+        border-radius: 5px;
+
+    }
+    90% {
+        transform: scale(1.3);
+        opacity: 1;
+        border-radius: 5px;
+
+    }
+
+    95% {
+        transform: scale(1.2);
+        opacity: 1;
+        border-radius: 5px;
+
+    }
+
+    96% {
+        transform: scale(1.1);
+        border-radius: 10px;
+
+    }
+
+    96% {
+        transform: scale(1) rotate(-30deg);
+        border-radius: 10px;
+    }
+
+    97% {
+        transform: scale(1) rotate(30deg);
+        border-radius: 10px;
+    }
+
+    99% {
+        transform: scale(1) rotate(-15deg);
+        border-radius: 10px;
+    }
+
+    100% {
+        transform: scale(1) rotate(15deg);
+        border-radius: 10px;
+    }
+
 }
